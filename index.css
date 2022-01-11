@@ -4,15 +4,19 @@ html{
     padding: 0px;
     box-sizing: border-box;
     background-color: white;
+  
 }
 /*----------------------------------------------*/
 /*--------------------HTML----------------------*/
 body{
     width: 600px;
-    margin: 0px auto 0px;
     border: 3px #931420 solid;
     background-color: #fffded;
+    margin:auto;
 
+}
+div p{
+  margin: 2%;
 }
 header{
     border-bottom: 3px #800000 solid;
@@ -40,36 +44,56 @@ header h3{
 }
 .shadow{
     text-shadow: 2px 2px #800000;
-
 }
 
 /*--------------HEADER--------------------*/
+
 main{
-    margin: 20px 0px 20px;
-    padding-left: 20px;
+  width: 500px;
+  height: 500px;
+    margin: 0px auto;
+    padding: 0px;
 }
 .main_content_2{
   font-style: italic;
 }
-main h1{
-    font-size: 150%;
+aside{
+  width: 37%;
+  height: 70%;
+  display: inline-block;
 }
-main h2{
+aside h1{
+  font-size: 150%;
+  color: #800000;
+}
+aside h3{
+  font-size: 105%;
+  margin: 0px;
+}
+aside a{
+  font-weight: bold;
+  color: blue;
+}
+aside div img{
+  border-radius: 10%;
+  box-shadow: 2px 3px #888888;
+
+}
+/*-----------Aside-----------*/
+section{
+  width: 50%;
+  height: 70%;
+  margin-left: 4%;
+  margin-top: 0%;
+  display: inline-block;
+}
+section h2{
     font-size: 130%;
     color: #800000;
 }
-main h3{
-    font-size: 105%;
-}
-main h1{
-  margin-right: 20px;
-  padding: 10px;
-  border-top: 3px #800000 solid;  
-  border-bottom: 3px #800000 solid;  
-}
-.info a{
-    padding-bottom: 10px;
-}
+/*-------Section----------*/
+
+
 /*------------- MAIN-----------------*/
 footer{
     background-color: #931400;
@@ -81,5 +105,3 @@ footer p{
     margin: 0px;
 }
 /*------------- FOOTER-----------------*/
-
-
