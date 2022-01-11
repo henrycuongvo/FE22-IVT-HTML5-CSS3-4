@@ -1,0 +1,85 @@
+html{
+    font-family: Arial, sans-serif;
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: white;
+}
+/*----------------------------------------------*/
+/*--------------------HTML----------------------*/
+body{
+    width: 600px;
+    margin: 0px auto 0px;
+    border: 3px #931420 solid;
+    background-color: #fffded;
+
+}
+header{
+    border-bottom: 3px #800000 solid;
+    padding: 20px 0px 20px;
+    padding-left: 20px;
+    background-color: #f6bb73;
+    background-image: linear-gradient( 30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%)
+
+}
+header img{
+ float: left;
+ padding: 0px 20px;
+}
+header h2{
+    font-size: 170%;
+    color: #800000;
+    display: block;
+    margin: 0px;
+}
+header h3{
+    font-size: 130%;
+    font-style: italic;
+    display: block;
+    margin: 0px;
+}
+.shadow{
+    text-shadow: 2px 2px #800000;
+
+}
+
+/*--------------HEADER--------------------*/
+main{
+    margin: 20px 0px 20px;
+    padding-left: 20px;
+}
+.main_content_2{
+  font-style: italic;
+}
+main h1{
+    font-size: 150%;
+}
+main h2{
+    font-size: 130%;
+    color: #800000;
+}
+main h3{
+    font-size: 105%;
+}
+main h1{
+  margin-right: 20px;
+  padding: 10px;
+  border-top: 3px #800000 solid;  
+  border-bottom: 3px #800000 solid;  
+}
+.info a{
+    padding-bottom: 10px;
+}
+/*------------- MAIN-----------------*/
+footer{
+    background-color: #931400;
+    margin: 0px;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    margin: 0px;
+}
+/*------------- FOOTER-----------------*/
+
+
