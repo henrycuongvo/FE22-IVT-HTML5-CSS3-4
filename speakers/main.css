@@ -1,0 +1,133 @@
+html{
+  font-family: Arial, sans-serif;
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: white;
+
+}
+/*----------------------------------------------*/
+/*--------------------HTML----------------------*/
+body{
+  width: 800px;
+  border: 3px #931420 solid;
+  background-color: #fffded;
+  margin: 0px auto; 
+
+}
+header{
+  border-bottom: 3px #800000 solid;
+  padding: 20px 0px 20px;
+  padding-left: 20px;
+  background-color: #f6bb73;
+  background-image: linear-gradient( 30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%)
+
+}
+header img{
+float: left;
+padding: 0px 20px;
+}
+header h2{
+  font-size: 170%;
+  color: #800000;
+  display: block;
+  margin: 0px;
+}
+header h3{
+  font-size: 105%;
+  padding-bottom: 0.25em;
+  font-style: italic;
+  display: block;
+  margin: 0px;
+}
+.shadow{
+  text-shadow: 2px 2px #800000;
+}
+
+/*--------------HEADER--------------------*/
+nav{
+padding: 5px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+background-color: #800000;
+}
+nav a{
+text-decoration: none;
+color: white;
+}
+
+main{
+width: 97.5%;
+/* width:780px; */
+/* margin: 0px auto; */
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: space-between;
+}
+/*--------------Main--------------------*/
+
+aside{
+width: 27.6%;
+/* (215px) */
+padding: 0% 0% 2.5% 2.5%;
+}
+aside h1{
+font-size: 150%;
+color: #800000;
+}
+aside h3{
+font-size: 105%;
+padding-bottom: 0.25em;
+margin: 0px;
+}
+aside a{
+font-weight: bold;
+color: blue;
+}
+aside div img{
+border-radius: 10%;
+box-shadow: 2px 3px #888888;
+
+}
+.return{
+  padding-top: 10%;
+}
+/*-----------Aside-----------*/
+section{
+width: 67.3%;
+/*525px*/
+display: inline-block;
+padding: 0% 2.5% 2.5% 0%;
+
+}
+.sect2 h2{
+width: 100%;
+  font-size: 130%;
+  color: #800000;
+}
+.article {
+display: flex;
+flex-direction: row;
+}
+.sect2_1{
+width: 54%;
+}
+.sect2_2{
+width: 40%;
+padding-left: 4%;
+}
+
+/*-------Section----------*/
+/*---------------MAIN----------------*/
+footer{
+  background-color: #931400;
+  margin: 0px;
+  padding: 20px;
+}
+footer p{
+  text-align: center;
+  margin: 0px;
+}
+/*------------- FOOTER-----------------*/
