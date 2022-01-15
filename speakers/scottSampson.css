@@ -149,6 +149,10 @@ footer p{
 
 /* -----------------WIDTH <480px-------------- */
 @media only screen and (max-width: 31.1875em){
+  /* -------parent------- */
+  .content{
+    display: flex;
+  }
 .menu{
   display: block;
   width: 30%;
@@ -159,20 +163,21 @@ main{
   text-align: center;
   padding: 0% 2%;
 }
-.content{
-  display: flex;
+aside{
+  width: 100%;
+}
+section{
+  width: 100%;
 }
 nav{
   background-color: blanchedalmond;
 }
+/* ---------child------- */
 nav a{
   color: black;
   font-size: 150%;
   padding-top:10%;
   margin-top: 10%;
-}
-aside{
-  width: 100%;
 }
 .speakers{
   display: flex;
@@ -183,15 +188,10 @@ aside{
 }
 .article{
   width: 100%;
-  display: block;
-  
-}
-section{
-  width: 100%;
+  display: block; 
 }
 .sect2_1{
   width: 100%;
-
 }
 .sect2_2{
   width: 70%;
