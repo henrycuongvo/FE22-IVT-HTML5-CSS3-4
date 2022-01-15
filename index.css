@@ -62,17 +62,13 @@ nav{
   flex-direction: row;
   justify-content: space-around;
   background-color: #800000;
-
 }
 nav a{
 text-decoration: none;
 color: white;
 
 }
-
-
 /*-----------Aside-----------*/
-
 aside{
   width: 26.875%;
   /* (215px) */
