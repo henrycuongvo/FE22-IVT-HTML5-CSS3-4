@@ -15,6 +15,7 @@ body{
     margin: 0px auto; 
 
 }
+/*--------------HEADER--------------------*/
 header{
     border-bottom: 3px #800000 solid;
     padding: 20px 0px 20px;
@@ -43,22 +44,9 @@ header h3{
 .shadow{
     text-shadow: 2px 2px #800000;
 }
-
-/*--------------HEADER--------------------*/
-nav{
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #800000;
-}
-nav a{
-text-decoration: none;
-color: white;
-}
-
+/*--------------Main--------------------*/
 main{
-  width: 97.5%;
+  width: 100%;
   /* width:780px; */
   /* margin: 0px auto; */
   display: flex;
@@ -66,10 +54,27 @@ main{
   align-content: center;
   justify-content: space-between;
 }
-/*--------------Main--------------------*/
+/*--------------Nav--------------------*/
+
+nav{
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #800000;
+
+}
+nav a{
+text-decoration: none;
+color: white;
+
+}
+
+
+/*-----------Aside-----------*/
 
 aside{
-  width: 27.6%;
+  width: 26.875%;
   /* (215px) */
   padding: 0% 0% 2.5% 2.5%;
 }
@@ -91,9 +96,10 @@ aside div img{
   box-shadow: 2px 3px #888888;
 
 }
-/*-----------Aside-----------*/
+/*-------Section----------*/
+
 section{
-  width: 67.3%;
+  width: 73.125%;
   /*525px*/
   display: inline-block;
   padding: 0% 2.5% 2.5% 0%;
@@ -109,15 +115,14 @@ section{
   flex-direction: row;
 }
 .sect2_1{
-width: 54%;
+width: 55%;
 }
 .sect2_2{
-  width: 40%;
+  width: 45%;
   padding-left: 4%;
 }
+/*------------- FOOTER-----------------*/
 
-/*-------Section----------*/
-/*---------------MAIN----------------*/
 footer{
     background-color: #931400;
     margin: 0px;
@@ -127,4 +132,75 @@ footer p{
     text-align: center;
     margin: 0px;
 }
-/*------------- FOOTER-----------------*/
+
+/* -----------------RESPONSIVE---------------- */
+/* ------------------WIDTH >=800px-------------- */
+@media only screen and (min-width: 50em){}
+/* ------------------WIDTH <800px--------------- */
+@media only screen and (max-width: 49.9375em){
+  .menu{
+    display: none;
+  }
+}
+
+
+/* -----------------WIDTH <480px-------------- */
+@media only screen and (max-width: 31.1875em){
+  .menu{
+    display: block;
+    width: 30%;
+  }
+  main{
+    width: 70%;
+    display: block;
+    text-align: center;
+  }
+  .content{
+    display: flex;
+  }
+  nav{
+    background-color: blanchedalmond;
+  }
+  nav a{
+    color: black;
+    font-size: 150%;
+    padding-top:10%;
+    margin-top: 10%;
+  }
+  aside{
+    width: 100%;
+  }
+  .speakers{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .speakers div{
+    width: 50%;
+  }
+  .article{
+    width: 100%;
+    display: block;
+    
+  }
+  section{
+    width: 100%;
+  }
+  .sect2_1{
+    width: 100%;
+
+  }
+  .sect2_2{
+    width: 70%;
+    margin: 0% auto;
+  }
+  .price_ticket{
+    text-align: left;
+    padding-left: 35%;
+   }
+}
+
+
+
+
+
+
