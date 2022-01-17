@@ -1,4 +1,4 @@
-html{
+:root{
   font-family: Arial, sans-serif;
   margin:0px;
   padding: 0px;
@@ -6,9 +6,14 @@ html{
   background-color: white;
 
 }
+h1{
+font-size: 150%;
+padding: 0.5em 0em 0.25em 0em;
+margin: 0px;
+}
 /*----------------------------------------------*/
-/*--------------------HTML----------------------*/
-body{
+/*--------------------ROOT----------------------*/
+.container{
   width: 800px;
   border: 3px #931420 solid;
   background-color: #fffded;
@@ -19,10 +24,8 @@ body{
 header{
   border-bottom: 3px #800000 solid;
   padding: 20px 0px 20px;
-  padding-left: 20px;
   background-color: #f6bb73;
   background-image: linear-gradient( 30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%)
-
 }
 header img{
 float: left;
@@ -44,6 +47,19 @@ header h3{
 .shadow{
   text-shadow: 2px 2px #800000;
 }
+/*--------------Nav--------------------*/
+nav{
+padding: 5px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+background-color: #800000;
+}
+nav a{
+text-decoration: none;
+color: white;
+
+}
 /*--------------Main--------------------*/
 main{
 width: 100%;
@@ -54,33 +70,19 @@ flex-direction: row;
 align-content: center;
 justify-content: space-between;
 }
-/*--------------Nav--------------------*/
-
-nav{
-padding: 5px;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-background-color: #800000;
-
-}
-nav a{
-text-decoration: none;
-color: white;
-
-}
-
 
 /*-----------Aside-----------*/
-
-aside{
+aside {
 width: 26.875%;
 /* (215px) */
-padding: 0% 0% 2.5% 2.5%;
+padding: 0px 0px 20px 20px;
 }
-aside h1{
-font-size: 150%;
+aside h2{
+font-size: 130%;
 color: #800000;
+line-height: 150%;
+margin: 0px;
+padding: 5px;
 }
 aside h3{
 font-size: 105%;
@@ -90,14 +92,11 @@ margin: 0px;
 aside a{
 font-weight: bold;
 color: blue;
+padding-bottom: 5px;
 }
 aside div img{
-border-radius: 10%;
-box-shadow: 2px 3px #888888;
+padding-bottom: 1em;
 
-}
-.return{
-  padding-top: 10%;
 }
 /*-------Section----------*/
 
@@ -105,24 +104,32 @@ section{
 width: 73.125%;
 /*525px*/
 display: inline-block;
-padding: 0% 2.5% 2.5% 0%;
+padding: 0px 20px 20px 20px;
 
 }
-.sect2 h2{
+.sect__body h1{
 width: 100%;
-  font-size: 130%;
   color: #800000;
 }
 .article {
 display: flex;
 flex-direction: row;
 }
-.sect2_1{
+.article__content{
 width: 55%;
 }
-.sect2_2{
+.article__content h3{
+font-size: 105%;
+padding-bottom: 0.25em;
+}
+
+.article__img{
 width: 45%;
 padding-left: 4%;
+}
+.article__img img{
+border: 1px black solid;
+
 }
 /*------------- FOOTER-----------------*/
 
@@ -130,6 +137,7 @@ footer{
   background-color: #931400;
   margin: 0px;
   padding: 20px;
+  
 }
 footer p{
   text-align: center;
@@ -149,10 +157,10 @@ footer p{
 
 /* -----------------WIDTH <480px-------------- */
 @media only screen and (max-width: 31.1875em){
-  /* -------parent------- */
-  .content{
-    display: flex;
-  }
+/* -------parent------- */
+.content{
+  display: flex;
+}
 .menu{
   display: block;
   width: 30%;
@@ -161,49 +169,60 @@ main{
   width: 70%;
   display: block;
   text-align: center;
-  padding: 0% 2%;
+  padding: 20px;
+
+}
+nav{
+  background-color: blanchedalmond;
+  padding: 20px;
+  margin: 0px;
+}
+nav > div{
+  padding-top: 10px;
+}
+nav a{
+  color: black;
+  font-size: 150%;
 }
 aside{
   width: 100%;
 }
 section{
   width: 100%;
+  padding: 0px;
 }
-nav{
-  background-color: blanchedalmond;
-}
-/* ---------child------- */
-nav a{
-  color: black;
-  font-size: 150%;
-  padding-top:10%;
-  margin-top: 10%;
-}
-.speakers{
+/* ---------Responsive__Menu------- */
+
+
+/* ---------Responsive__Aside------- */
+
+.aside__speakers{
   display: flex;
   flex-wrap: wrap;
 }
-.speakers div{
+.aside__speakers div{
   width: 50%;
+}
+/* ---------Responsive__Section__Body------- */
+.sect__body{
+  width: 100%;
 }
 .article{
   width: 100%;
-  display: block; 
+  display: block;
+  margin-bottom: 10px;
 }
-.sect2_1{
+
+.article__content{
   width: 100%;
+
 }
-.sect2_2{
+.article__img{
   width: 70%;
   margin: 0% auto;
 }
-.price_ticket{
-  text-align: left;
-  padding-left: 35%;
- }
-
+/* ---------Responsive__Section__Footer------- */
 }
-
 
 
 
